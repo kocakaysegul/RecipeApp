@@ -18,6 +18,7 @@
 		D89DF7E429DC2D2500290893 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7E329DC2D2500290893 /* DataSet.swift */; };
 		D89DF7E629DC4F9800290893 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7E529DC4F9800290893 /* CategoryCell.swift */; };
 		D89DF7E829DC642000290893 /* RecipesSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7E729DC642000290893 /* RecipesSelectionVC.swift */; };
+		D89DF7EA29DC69BA00290893 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7E929DC69BA00290893 /* RecipeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D89DF7E329DC2D2500290893 /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
 		D89DF7E529DC4F9800290893 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		D89DF7E729DC642000290893 /* RecipesSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesSelectionVC.swift; sourceTree = "<group>"; };
+		D89DF7E929DC69BA00290893 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				D89DF7E529DC4F9800290893 /* CategoryCell.swift */,
+				D89DF7E929DC69BA00290893 /* RecipeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				D89DF7E429DC2D2500290893 /* DataSet.swift in Sources */,
 				D89DF7CD29DC29EB00290893 /* HomeVC.swift in Sources */,
 				D89DF7C929DC29EB00290893 /* AppDelegate.swift in Sources */,
+				D89DF7EA29DC69BA00290893 /* RecipeCell.swift in Sources */,
 				D89DF7E629DC4F9800290893 /* CategoryCell.swift in Sources */,
 				D89DF7CB29DC29EB00290893 /* SceneDelegate.swift in Sources */,
 				D89DF7E829DC642000290893 /* RecipesSelectionVC.swift in Sources */,

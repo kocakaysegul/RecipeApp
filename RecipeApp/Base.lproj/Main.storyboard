@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -81,14 +82,60 @@
                     <view key="view" contentMode="scaleToFill" id="bZu-Ok-pqr">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="X4v-BH-eir">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2cY-JI-5vR">
+                                    <size key="itemSize" width="162" height="153"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="H5L-Sa-gll" customClass="RecipeCell" customModule="RecipeApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XMa-nX-fQb">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9af-XV-mvZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9af-XV-mvZ" firstAttribute="top" secondItem="XMa-nX-fQb" secondAttribute="top" id="1q7-L2-EfX"/>
+                                                <constraint firstAttribute="trailing" secondItem="9af-XV-mvZ" secondAttribute="trailing" id="QFX-hD-9vE"/>
+                                                <constraint firstItem="9af-XV-mvZ" firstAttribute="leading" secondItem="XMa-nX-fQb" secondAttribute="leading" id="XvT-ir-suk"/>
+                                                <constraint firstAttribute="bottom" secondItem="9af-XV-mvZ" secondAttribute="bottom" id="dqR-sE-yFk"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="150" height="150"/>
+                                        <connections>
+                                            <outlet property="recipeImage" destination="9af-XV-mvZ" id="uIM-FH-pWe"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bUu-8n-3FT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bUu-8n-3FT" firstAttribute="bottom" secondItem="X4v-BH-eir" secondAttribute="bottom" id="INr-e9-dmO"/>
+                            <constraint firstItem="X4v-BH-eir" firstAttribute="leading" secondItem="bUu-8n-3FT" secondAttribute="leading" id="JGz-ug-91w"/>
+                            <constraint firstItem="bUu-8n-3FT" firstAttribute="trailing" secondItem="X4v-BH-eir" secondAttribute="trailing" id="k6y-x6-FWF"/>
+                            <constraint firstItem="X4v-BH-eir" firstAttribute="top" secondItem="bUu-8n-3FT" secondAttribute="top" id="zNH-EN-cMr"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X73-za-Wni"/>
+                    <connections>
+                        <outlet property="collectionView" destination="X4v-BH-eir" id="PRU-Qa-SU9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfo-hV-fdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1251" y="-39"/>
+            <point key="canvasLocation" x="1249.6183206106871" y="-39.436619718309863"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="giB-35-n59">
