@@ -16,6 +16,7 @@
 		D89DF7E029DC2B0A00290893 /* FoodCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7DF29DC2B0A00290893 /* FoodCategory.swift */; };
 		D89DF7E229DC2CAF00290893 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7E129DC2CAF00290893 /* Recipe.swift */; };
 		D89DF7E429DC2D2500290893 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7E329DC2D2500290893 /* DataSet.swift */; };
+		D89DF7E629DC4F9800290893 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7E529DC4F9800290893 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D89DF7DF29DC2B0A00290893 /* FoodCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategory.swift; sourceTree = "<group>"; };
 		D89DF7E129DC2CAF00290893 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		D89DF7E329DC2D2500290893 /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		D89DF7E529DC4F9800290893 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,6 @@
 				D89DF7DE29DC2AB100290893 /* Controller */,
 				D89DF7C829DC29EB00290893 /* AppDelegate.swift */,
 				D89DF7CA29DC29EB00290893 /* SceneDelegate.swift */,
-				D89DF7CC29DC29EB00290893 /* ViewController.swift */,
 				D89DF7CE29DC29EB00290893 /* Main.storyboard */,
 				D89DF7D129DC29EC00290893 /* Assets.xcassets */,
 				D89DF7D329DC29EC00290893 /* LaunchScreen.storyboard */,
@@ -89,6 +90,7 @@
 		D89DF7DD29DC2AAB00290893 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D89DF7E529DC4F9800290893 /* CategoryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +98,7 @@
 		D89DF7DE29DC2AB100290893 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D89DF7CC29DC29EB00290893 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				D89DF7E429DC2D2500290893 /* DataSet.swift in Sources */,
 				D89DF7CD29DC29EB00290893 /* ViewController.swift in Sources */,
 				D89DF7C929DC29EB00290893 /* AppDelegate.swift in Sources */,
+				D89DF7E629DC4F9800290893 /* CategoryCell.swift in Sources */,
 				D89DF7CB29DC29EB00290893 /* SceneDelegate.swift in Sources */,
 				D89DF7E029DC2B0A00290893 /* FoodCategory.swift in Sources */,
 				D89DF7E229DC2CAF00290893 /* Recipe.swift in Sources */,
