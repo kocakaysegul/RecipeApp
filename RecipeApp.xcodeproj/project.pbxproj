@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D89DF7C929DC29EB00290893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7C829DC29EB00290893 /* AppDelegate.swift */; };
 		D89DF7CB29DC29EB00290893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7CA29DC29EB00290893 /* SceneDelegate.swift */; };
-		D89DF7CD29DC29EB00290893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7CC29DC29EB00290893 /* ViewController.swift */; };
+		D89DF7CD29DC29EB00290893 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7CC29DC29EB00290893 /* HomeVC.swift */; };
 		D89DF7D029DC29EB00290893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89DF7CE29DC29EB00290893 /* Main.storyboard */; };
 		D89DF7D229DC29EC00290893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89DF7D129DC29EC00290893 /* Assets.xcassets */; };
 		D89DF7D529DC29EC00290893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89DF7D329DC29EC00290893 /* LaunchScreen.storyboard */; };
@@ -17,13 +17,14 @@
 		D89DF7E229DC2CAF00290893 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7E129DC2CAF00290893 /* Recipe.swift */; };
 		D89DF7E429DC2D2500290893 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7E329DC2D2500290893 /* DataSet.swift */; };
 		D89DF7E629DC4F9800290893 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7E529DC4F9800290893 /* CategoryCell.swift */; };
+		D89DF7E829DC642000290893 /* RecipesSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7E729DC642000290893 /* RecipesSelectionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D89DF7C529DC29EB00290893 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89DF7C829DC29EB00290893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D89DF7CA29DC29EB00290893 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D89DF7CC29DC29EB00290893 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D89DF7CC29DC29EB00290893 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		D89DF7CF29DC29EB00290893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D89DF7D129DC29EC00290893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D89DF7D429DC29EC00290893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 		D89DF7E129DC2CAF00290893 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		D89DF7E329DC2D2500290893 /* DataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
 		D89DF7E529DC4F9800290893 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		D89DF7E729DC642000290893 /* RecipesSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesSelectionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 		D89DF7DE29DC2AB100290893 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D89DF7CC29DC29EB00290893 /* ViewController.swift */,
+				D89DF7CC29DC29EB00290893 /* HomeVC.swift */,
+				D89DF7E729DC642000290893 /* RecipesSelectionVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,10 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D89DF7E429DC2D2500290893 /* DataSet.swift in Sources */,
-				D89DF7CD29DC29EB00290893 /* ViewController.swift in Sources */,
+				D89DF7CD29DC29EB00290893 /* HomeVC.swift in Sources */,
 				D89DF7C929DC29EB00290893 /* AppDelegate.swift in Sources */,
 				D89DF7E629DC4F9800290893 /* CategoryCell.swift in Sources */,
 				D89DF7CB29DC29EB00290893 /* SceneDelegate.swift in Sources */,
+				D89DF7E829DC642000290893 /* RecipesSelectionVC.swift in Sources */,
 				D89DF7E029DC2B0A00290893 /* FoodCategory.swift in Sources */,
 				D89DF7E229DC2CAF00290893 /* Recipe.swift in Sources */,
 			);
