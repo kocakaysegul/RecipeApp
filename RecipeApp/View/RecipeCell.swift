@@ -17,7 +17,7 @@ class RecipeCell: UICollectionViewCell {
     }
     
     func configureCell(recipe : Recipe) {
-        recipeImage.image = UIImage(named: recipe.title)
+        recipeImage.image = UIImage(named: recipe.imageName)
     }
     
 }
