@@ -34,6 +34,8 @@ class RecipesSelectionVC: UIViewController, UICollectionViewDelegate, UICollecti
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recipeCell", for: indexPath) as? RecipeCell {
             let recipe = recipes[indexPath.item]
             cell.configureCell(recipe: recipe)
+            cell.layer.cornerRadius = 10;
+            cell.layer.masksToBounds = true;
             return cell
         }
         return UICollectionViewCell()
