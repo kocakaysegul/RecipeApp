@@ -15,13 +15,16 @@ class RecipeDetailVC: UIViewController {
     
     @IBOutlet weak var recipeInstructionsLabel: UILabel!
     
-    
-    
+    var selectedRecipe : Recipe!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        recipeImage.image = UIImage(named: selectedRecipe.imageName)
+        recipeTitleLabel.text = selectedRecipe.title
+        recipeInstructionsLabel.text = selectedRecipe.instructions
     }
     
 
